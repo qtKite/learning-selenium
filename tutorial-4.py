@@ -18,7 +18,7 @@ driver.implicitly_wait(3)
 cookieButton = driver.find_element_by_id("bigCookie")
 cookie_count = driver.find_element_by_id("cookies")
 items = [driver.find_element_by_id("productPrice" + str(i)) for i in range(1, -1, 1)]
-
+driver.find_element_by
 actions = ActionChains(driver)
 actions.click(cookieButton) # we can queue a bunch of actions then perform them
 

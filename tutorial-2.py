@@ -13,7 +13,6 @@ driver.get("https://techwithtim.net")
 search = driver.find_element_by_name("s")
 search.send_keys("test")
 search.send_keys(webdriver.common.keys.Keys.RETURN)
-webdriver.remote.webelement.WebElement
 try:
     main = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "main"))
